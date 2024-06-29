@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Fira_Code, Inter } from 'next/font/google'
 
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import { Provider } from '@/components/Provider'
 
-const inter = Inter({ subsets: ['latin'] })
+const firaCode = Fira_Code({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
 	title: 'Anoop Raju',
@@ -19,7 +19,7 @@ interface Props {
 export default function RootLayout({ children }: Readonly<Props>) {
 	return (
 		<html lang='en'>
-			<body className={inter.className}>
+			<body className={firaCode.className}>
 				<Provider>
 					<Navbar />
 					<main className='mx-auto max-w-5xl px-6'>{children}</main>
