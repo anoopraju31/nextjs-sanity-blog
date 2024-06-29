@@ -1,6 +1,7 @@
 import { Lilita_One } from 'next/font/google'
 import Link from 'next/link'
 import { FC } from 'react'
+import ThemeSwitch from './ThemeSwitch'
 
 const font = Lilita_One({ weight: '400', subsets: ['latin'] })
 
@@ -17,7 +18,7 @@ const Navbar: FC = () => {
 					</div>
 				</Link>
 
-				<div className=''> Theme </div>
+				<ThemeSwitch />
 			</div>
 		</div>
 	)
